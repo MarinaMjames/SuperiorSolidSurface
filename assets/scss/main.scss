@@ -1,0 +1,26 @@
+@import "normalize";
+@import "susy";
+@import "breakpoint";
+@import "compass";
+
+$susy: (
+	columns: 16,
+	// debug: (image: show),
+	global-box-sizing: border-sizing
+);
+
+@include border-box-sizing;
+
+$medium-screen: 720px;
+
+.navbar {
+
+	@include breakpoint($medium-screen) {
+		@include span(16 of 16);
+}
+
+.main {
+
+	@include breakpoint($medium-screen) {
+		@include span(16 of 16);
+}
